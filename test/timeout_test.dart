@@ -8,6 +8,6 @@ void main() {
 
     test('even slower test', () {
       // ...
-    }, timeout: Timeout.factor(2)); // multiplica
-  }, timeout: Timeout(Duration(minutes: 1)));
+    }, timeout: Timeout.factor(2)); // Timeout.factor(x) multiplica 30 por x
+  }, timeout: Timeout(Duration(seconds: 6)));
 }

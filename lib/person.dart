@@ -5,5 +5,6 @@ class Person {
 
   Person({required this.age});
 
-  calc({required int age}) => (age / 0.32523523); // roundToDouble()
+  calc({required int age}) =>
+      (age / 0.32523523).roundToDouble(); // roundToDouble()
 }

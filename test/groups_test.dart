@@ -1,19 +1,19 @@
 import 'package:test/test.dart';
 
 void main() {
-  group('String ===>', () {
+  group('Grupo das Strings ===>', () {
     test('.split() splits the string on the delimiter', () {
       var string = 'foo,bar,baz';
       expect(string.split(','), equals(['foo', 'bar', 'baz']));
     });
 
     test('.trim() removes surrounding whitespace', () {
-      var string = '  foo ';
+      var string = '  foo        ';
       expect(string.trim(), equals('foo'));
     });
   });
 
-  group('int ===>', () {
+  group('Grupo dos Integers ===>', () {
     test('.remainder() returns the remainder of division', () {
       expect(11.remainder(3), equals(2));
     });
